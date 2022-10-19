@@ -3,8 +3,8 @@ import logo from "../images/logo.svg";
 function Header() {
   return (
     <div className={Header}>
-      <header class="header">
-        <img src={logo} alt="Логотип Место" class="header__logo" />
+      <header className="header">
+        <img src={logo} alt="Логотип Место" className="header__logo" />
       </header>
     </div>
   );

@@ -5,20 +5,20 @@ function ImagePopup(props) {
     <div
       className={`popup popup_full-screen ${props.card ? "popup_opened" : ""}`}
     >
-      <figure class="popup__container-full-screen">
+      <figure className="popup__container-full-screen">
         <img
           src={props.card ? props.card.link : ""}
           alt={props.card ? props.card.name : ""}
-          class="popup__full-image"
+          className="popup__full-image"
         />
-        <figcaption class="popup__full-text">
+        <figcaption className="popup__full-text">
           {props.card ? props.card.name : ""}
         </figcaption>
-        <button type="button" class="popup__close">
+        <button type="button" className="popup__close">
           <img
             src={closeIcon}
             alt="закрывающий крестик"
-            class="popup__close-image"
+            className="popup__close-image"
             onClick={props.onClose}
           />
         </button>

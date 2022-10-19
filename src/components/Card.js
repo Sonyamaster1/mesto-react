@@ -1,7 +1,7 @@
 import like from "../images/Vector3.svg";
 import trash from "../images/trash.svg";
 import React from "react";
-function Card(card, props) {
+function Card(card) {
   function handleClick() {
     card.onCardClick(card);
   }

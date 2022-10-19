@@ -12,7 +12,7 @@ function PopupWithForm(props) {
         <form className={`popup__form popup__${props.form}`}>
           <fieldset className="popup__fieldset">
             {props.children}
-            <button type="submit" class="popup__button">
+            <button type="submit" className="popup__button">
               {props.buttonText}
             </button>
           </fieldset>
@@ -21,7 +21,7 @@ function PopupWithForm(props) {
           <img
             src={closeIcon}
             alt="закрывающий крестик"
-            class="popup__close-image"
+            className="popup__close-image"
           />
         </button>
       </div>

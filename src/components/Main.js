@@ -22,7 +22,7 @@ function Main(props) {
       .catch((err) => {
         console.log(err);
       });
-  });
+  }, []);
   const [cards, setCards] = React.useState([]);
   React.useEffect(() => {
     api
@@ -71,7 +71,7 @@ function Main(props) {
         </section>
         <section className="elements">
           {cards.map((card) => (
-            <Card key={card.id} {...card} onCardClick={props.onCardClick} />
+            <Card key={card._id} {...card} onCardClick={props.onCardClick} />
           ))}
         </section>
       </main>
