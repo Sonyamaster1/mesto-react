@@ -7,7 +7,7 @@ function Main(props) {
   const [info, setInfo] = React.useState({
     name: "Обновление...",
     about: "Обновление...",
-    avatar: false,
+    avatar: '',
   });
   React.useEffect(() => {
     api
@@ -35,7 +35,7 @@ function Main(props) {
       });
   }, []);
   return (
-    <div className={Main}>
+    <div className='Main'>
       <main className="content">
         <section className="profile">
           <img

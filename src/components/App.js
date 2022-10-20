@@ -44,7 +44,7 @@ function App() {
     setSelectedCard(null);
   }
   return (
-    <body className="root">
+    <div className="root">
       <div className="page">
         <Header />
         <Main
@@ -74,7 +74,7 @@ function App() {
             maxLength="30"
             required
           />
-          <span classNmae="popup__error image-input-error"></span>
+          <span className="popup__error image-input-error"></span>
           <input
             className="popup__input popup__input_type_link"
             type="url"
@@ -152,7 +152,7 @@ function App() {
           onClose={closeAllPopups}
         />
       </div>
-    </body>
+    </div>
   );
 }
 

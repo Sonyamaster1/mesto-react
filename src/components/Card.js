@@ -16,12 +16,12 @@ function Card(card) {
       <div className="element__text">
         <h2 className="element__title">{card.name}</h2>
         <button type="button" className="element__button-like">
-          <img src={like} className="element__like" />
+          <img src={like} alt="Иконка лайка" className="element__like" />
           <div className="element__like-counter">{card.likes.length}</div>
         </button>
       </div>
       <button type="reset" className="element__button-trash">
-        <img src={trash} className="element__trash" />
+        <img src={trash} alt="Иконка мусорки" className="element__trash" />
       </button>
     </div>
   );
