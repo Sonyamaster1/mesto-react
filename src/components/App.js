@@ -44,8 +44,8 @@ function App() {
     setSelectedCard(null);
   }
   return (
-    <body class="root">
-      <div class="page">
+    <body className="root">
+      <div className="page">
         <Header />
         <Main
           onEditAvatar={handleEditAvatarClick}
