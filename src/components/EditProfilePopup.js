@@ -2,12 +2,7 @@ import React from "react";
 import PopupWithForm from "./PopupWithForm";
 import { CurrentUserContext } from "../context/CurrentUserContext.js";
 
-function EditProfilePopup({
-  handleUpdateUser,
-  closeAllPopups,
-  isOpen,
-  onClose,
-}) {
+function EditProfilePopup({ onUpdateAvatar, closeAllPopups, isOpen, onClose }) {
   const currentUser = React.useContext(CurrentUserContext);
   const { name, about } = currentUser;
   const [profileName, setpProfileName] = React.useState("");
@@ -23,18 +18,10 @@ function EditProfilePopup({
   function handleSubmit(evt) {
     evt.preventDefault();
 
-    handleUpdateUser({
+    onUpdateAvatar({
       name: profileName,
       about: profileAbout,
-    })
-      .then((data) => {
-        currentUser.name = data.name;
-        currentUser.about = data.about;
-      })
-      .catch((err) => console.log(err));
-    currentUser.name = profileName;
-    currentUser.about = profileAbout;
-    closeAllPopups();
+    });
   }
   // всталяем значение в инпуты
   React.useEffect(() => {

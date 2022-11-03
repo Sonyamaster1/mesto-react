@@ -144,11 +144,12 @@ function App() {
           <EditProfilePopup
             isOpen={isEditProfilePopupOpen}
             onClose={closeAllPopups}
-            handleUpdateUser={handleUpdateUser}
+            onUpdateAvatar={handleUpdateUser}
           />
           <EditAvatarPopup
             isOpen={isEditAvatarPopupOpen}
             onClose={closeAllPopups}
+            //onSubmit={handleUpdateAvatar}
             onUpdateAvatar={handleUpdateAvatar}
           />
           <PopupWithForm
